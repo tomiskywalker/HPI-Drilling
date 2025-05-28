@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galerie | HPI-Drilling s.r.o.</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+<div class="container"> <!-- FLEX OBAL -->
+
+  <header>
+    <h1>HPI-Drilling s.r.o.</h1>
+    <nav>
+    <ul>
+      <li><button onclick="location.href='index.html'">Úvod</button></li>
+      <li><button onclick="location.href='uvod.html'">O nás</button></li>
+      <li><button onclick="location.href='vybaveni.html'">Vybavení</button></li>
+      <li><button onclick="location.href='cinnosti.html'">Činnosti</button></li>
+      <li><button onclick="location.href='galerie.html'">Galerie</button></li>
+      <li><button onclick="location.href='kontakty.html'">Kontakty</button></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Galerie / Gallery</h2>
+      <p>Zde naleznete fotografie naší techniky a realizovaných projektů.</p>
+      <div class="gallery">
+        <!-- Příklady vložených fotografií -->
+        <img src="images/foto1.jpg" alt="Vrtná souprava v terénu">
+        <img src="images/foto2.jpg" alt="Detail technologie vrtání">
+        <img src="images/foto3.jpg" alt="Práce v náročném terénu">
+        <!-- Další fotografie přidávej do složky images a sem vlož nové <img> tagy -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 HPI-Drilling s.r.o. Všechna práva vyhrazena.</p>
+  </footer>
+
+</div> <!-- konec container -->
+</body>
+</html>
