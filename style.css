@@ -111,3 +111,11 @@ footer {
   color: white;
   margin-top: auto;
 }
+
+.main-background {
+  background-image: url('background-pattern.png'); /* obrázek čárek */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
