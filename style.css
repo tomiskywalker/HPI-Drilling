@@ -11,10 +11,10 @@ header {
   padding: 10px 0;
   display: flex;
   justify-content: center;
-  align-items: center;       /* Vertikální zarovnání */
-  height: 170px;             /* Pevná výška headeru */
-  box-sizing: border-box;    /* Padding neovlivňuje výšku */
-  overflow: hidden;          /* Ořízne přetečení obrázku */
+  align-items: center;
+  height: 170px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .header-content {
@@ -25,7 +25,7 @@ header {
 }
 
 .logo img {
-  height: 220px;            /* Výchozí výška obrázku */
+  height: 220px;
   width: auto;
   padding: 0;
   margin: 0;
@@ -52,9 +52,9 @@ nav ul li {
 
 nav ul li a {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 700;       /* tučné */
-  font-size: 20px;        /* velké písmo */
-  color: white;         /* oranžová */
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
   text-decoration: none;
   padding: 8px 12px;
   display: inline-block;
@@ -63,12 +63,11 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-  color: #ff8000;          /* tmavě modrá při hoveru */
+  color: #ff8000;
   text-decoration: underline;
   outline: none;
 }
 
-/* Skryjeme původní styly pro tlačítka v menu, kdyby zůstala v HTML */
 nav ul li button {
   display: none;
 }
@@ -129,7 +128,7 @@ footer {
 }
 
 .main-background {
-  background-image: url('background-pattern.png'); /* obrázek čárek */
+  background-image: url('background-pattern.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -164,12 +163,11 @@ footer {
 }
 
 .stroj {
-  border-left: 4px solid #ff8000; /* ORANŽOVÁ barva */
+  border-left: 4px solid #ff8000;
 }
 
-/* Mobilní úpravy */
+/* ✅ Mobilní úpravy */
 @media (max-width: 768px) {
-  /* Header se přizpůsobí – sloupce pod sebe */
   header {
     flex-direction: column;
     height: auto;
@@ -180,21 +178,23 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    text-align: center;
   }
 
   .logo img {
-    height: 100px; /* Zmenší logo na mobilu */
+    height: 100px;
   }
 
   nav ul {
     flex-direction: column;
     align-items: center;
     padding: 0;
+    margin-top: 10px;
     gap: 5px;
   }
 
   nav ul li {
-    margin: 0;
+    margin: 5px 0;
   }
 
   nav ul li a {
@@ -211,7 +211,7 @@ footer {
   }
 
   .grid-boxes {
-    grid-template-columns: 1fr; /* Jedna krabice na řádek */
+    grid-template-columns: 1fr;
   }
 
   .box {
