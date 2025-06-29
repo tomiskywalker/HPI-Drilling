@@ -166,3 +166,55 @@ footer {
 .stroj {
   border-left: 4px solid #ff8000; /* ORANŽOVÁ barva */
 }
+
+/* Mobilní úpravy */
+@media (max-width: 768px) {
+  /* Header se přizpůsobí – sloupce pod sebe */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 100px; /* Zmenší logo na mobilu */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 5px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  .grid-boxes {
+    grid-template-columns: 1fr; /* Jedna krabice na řádek */
+  }
+
+  .box {
+    padding: 25px;
+  }
+}
